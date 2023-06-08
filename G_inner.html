@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Inner Text</title>
+</head>
+<body>
+<p id="content">
+    <script>
+        console.info("Hello World");
+    </script>
+    <b>Abdul</b> Goffar <i>Man</i>
+</p>
+
+<script>
+    //inner adalah cara untuk pemgambilan beberapa element document
+    const content = document.getElementById("content");
+    //text content akan mengambil semua content pada element 
+    console.info(content.textContent);
+    //inner text hanya akan mengambil isi dari element 
+    console.info(content.innerText);
+</script>
+
+</body>
+</html>

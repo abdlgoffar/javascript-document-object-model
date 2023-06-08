@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img id="image"  src="" alt="">
+    <script>
+        //attribut digunakan  untuk mengambil attribut seperti src, alt, with, height pada sebuah element.
+        const image = document.getElementById("image");
+        const sourceImg = image.getAttribute("src")//cara pengambilan attribut element
+        const attributes = image.attributes;//cara mengambil semua attribut element.
+        for (let i of attributes) {
+            console.log(`${i.name} : ${i.value}`)
+        }
+    </script>
+</body>
+</html>

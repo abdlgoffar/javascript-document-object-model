@@ -1,0 +1,22 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Class Selector</title>
+</head>
+<body>
+<ul>
+  <li class="menuItem">First</li>
+  <li id="menu2">Second</li>
+  <li class="menuItem">Third</li>
+</ul>
+
+<script>
+    //id selector adalah cara untuk memanggil semua element  yg ada pada sebuah id attribut html document, seperti contoh di bawah
+    const menuItems = document.querySelectorAll("#menu2");
+    console.info(menuItems);
+</script>
+
+</body>
+</html>
